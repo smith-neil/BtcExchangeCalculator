@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BTC Calc or something</title>
+	<link rel="stylesheet" href="jquery-ui.css" />
+	<script src="jquery-2.1.0.min.js"></script>
+	<script src="jquery-ui.js"></script>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div id="bitcoinCalc">
+    <div class="container">
+      <h3>Bitcoin Profit Calculator</h3>
+    </div>
+    <div class="vert-separator"></div>
+
+    <div class="column pull-left">
+      <div class="container">
+        <div class="row">
+          <label for="exchangeRate">Exchange Rate:</label>
+          <input type="text" id="exchangeRate" class="alert" />
+        </div>
+        <div class="row">
+          <div id="exchangeRateSlider"></div>
+        </div>
+        <div class="row">
+          <label for="fee">Fee:</label>
+          <input type="text" id="fee" class="alert" />
+          <div class="row">
+            <div id="feeSlider"></div>
+          </div>
+          <div class="row">
+            <label for="priceRange">Price range:</label>
+            <input type="text" id="priceRange" class="alert" />
+          </div>
+          <div class="row">
+            <div id="priceRangeSlider"></div>
+          </div>
+          <div class="row">
+            <label for="amountSpent">Amount spent:</label>
+            <input type="text" id="amountSpent" class="alert" />
+          </div>
+        </div>
+        <div class="vert-separator"></div>
+        <div class="row">
+          <label for="totalAmountSpent">Total amount spent:</label>
+          <label id="totalAmountSpent" class="strong"></label>
+        </div>
+        <div class="row">
+          <label for="feeAmount">Fee amount:</label>
+          <label id="feeAmount" class="strong"></label>
+        </div>
+        <div class="row">
+          <label for="amountSpentOnBtc">Amount spent on BTC:</label>
+          <label id="amountSpentOnBtc" class="strong"></label>
+        </div>
+        <div class="row">
+          <label for="btcReceived">Btc received:</label>
+          <label id="btcReceived" class="strong"></label>
+        </div>
+      </div>
+    </div>
+    <div class="column pull-right">
+      <div class="container">
+        <div class="row">
+          <table id="results">
+            <tr>
+              <th>Exchange Rate</th>
+              <th>Fee</th>
+              <th>Amount Received</th>
+              <th>Margin</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<script src="btcCalc.js"></script>
+</body>
+</html>
